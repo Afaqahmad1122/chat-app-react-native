@@ -1,18 +1,18 @@
-import React from "react";
-import { StyleSheet, View } from "react-native";
+import Button from "@/components/Button";
 import ScreenWrapper from "@/components/ScreenWrapper";
 import Typo from "@/components/Typo";
 import { colors, spacingX, spacingY } from "@/constants/theme";
 import { verticalScale } from "@/utils/stylings";
-import Animated, { FadeIn } from "react-native-reanimated";
-import Button from "@/components/Button";
 import { useRouter } from "expo-router";
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import Animated, { FadeIn } from "react-native-reanimated";
 
 const Welcome = () => {
   const router = useRouter();
 
   return (
-    <ScreenWrapper showPattern={true}>
+    <ScreenWrapper showPattern={true} bgOpacity={0.5}>
       <View style={styles.container}>
         <View style={{ alignItems: "center" }}>
           <Typo color={colors.white} size={43} fontWeight="bold">
